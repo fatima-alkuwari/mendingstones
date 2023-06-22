@@ -1,0 +1,76 @@
+body {
+  background-color: white;
+}
+
+.top-txt {
+font-family: 'my font2', sans-serif;
+  font-size: 9pt;
+  margin-left: 30px;
+  margin-top: 56px;
+}
+
+.small-txt {
+  font-family: 'my font1', sans-serif;
+  font-size: 12pt;
+  margin-top: 680px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.close-btn{
+  position: fixed;
+  top: 55px;
+  left: 1727px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-family: american typewriter, sans-serif;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  z-index: 100;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.color-loop {
+  font-size: 3em;
+  text-align: left;
+  color: white;
+  animation: color-animation 3s linear infinite;
+}
+
+@keyframes color-animation {
+  0% {
+    color: black;
+  }
+  50% {
+    color: darkgray;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.close-btn a {
+  color: black;
+  text-decoration: none;
+}
+
+}
+@font-face {
+  font-family: 'my font2';
+  src: url(ABCCamera-RegularItalic-Trial.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'my font1';
+  src: url(ABCOracle-Light-Trial.otf) format('truetype');
+}

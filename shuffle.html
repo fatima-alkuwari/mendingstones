@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" type="text/css" href="shuffle.css">
+</head>
+<body>
+
+  <audio id="audio1" src="sound1.wav"></audio>
+<audio id="audio2" src="sound2.wav"></audio>
+<audio id="audio3" src="sound3.wav"></audio>
+<div class="player-container">
+  <div class="player">
+    <button class="play-btn" data-audio="audio1">Play Sound 1</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+  <div class="player">
+    <button class="play-btn" data-audio="audio2">Play Sound 2</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+  <div class="player">
+    <button class="play-btn" data-audio="audio3">Play Sound 3</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+
+<div id="video-container">
+  <video id="video1" autoplay loop>
+    <source src="" type="video/mp4">
+  </video>
+  <video id="video2" autoplay loop>
+    <source src="" type="video/mp4">
+  </video>
+  <video id="video3" autoplay loop>
+    <source src="" type="video/mp4">
+  </video>
+</div>
+<button id="shuffle-videos-btn">Shuffle</button>
+    <script src="shuffle.js"></script>
+</body>
+</html>

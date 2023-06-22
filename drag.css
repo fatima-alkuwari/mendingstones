@@ -1,0 +1,338 @@
+body {
+  font-family: 'my font1', sans-serif;
+  font-size:10pt;
+  position: relative;
+}
+
+#title {
+  font-family: 'my font2', sans-serif;
+  font-size: 49pt;
+  margin-left: 10px;
+  margin-top:15px;
+  display: flex;
+  position: absolute;
+}
+
+.optiontxt {
+  display: flex;
+}
+
+.thetext {
+  display: flex;
+  padding: 10px;
+  padding-left:500px;
+}
+
+.lists {
+  padding-left:500px;
+}
+
+#add-button1 {
+background-color: white;
+border: 1px solid black;
+border-radius: 2px;
+}
+
+#add-button2 {
+background-color: white;
+border: 1px solid black;
+border-radius: 2px;
+}
+
+#add-button3 {
+background-color: white;
+border: 1px solid black;
+border-radius: 2px;
+}
+
+select::-ms-expand {
+  display: none; /* Hide default arrow in IE10 and IE11 */
+}
+select {
+  appearance: none; /* Remove default arrow in other browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: white; /* Set background color of select element */
+  border: 1px solid black; /* Add border to select element */
+  padding: 5px; /* Add padding to select element */
+}
+select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-top-color: black; /* Set border color of arrow to black */
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+#yellow {
+  width: 40px;
+  height: 40px;
+  top:750px;
+  left:320px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-left: 1400px;
+  position: absolute;
+}
+
+#black {
+  width: 40px;
+  height: 40px;
+  top:800px;
+  left:820px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-left: 900px;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+#white {
+  width: 40px;
+  height: 40px;
+  top:700px;
+  left:1020px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-left: 700px;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+#red {
+  width: 40px;
+  height: 40px;
+  top:850px;
+  left:1220px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-left: 500px;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+#blue {
+  width: 40px;
+  height: 40px;
+  top:850px;
+  left:1220px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-left: 500px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+#white {
+  background-color: white;
+}
+
+#black {
+  background-color: black;
+  color: white;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#blue {
+  background-color: blue;
+  color: white;
+}
+
+
+const list1 = document.querySelector('#list1');
+const list2 = document.querySelector('#list2');
+const list3 = document.querySelector('#list3');
+const addButton1 = document.querySelector('#add-button1');
+const addButton2 = document.querySelector('#add-button2');
+const addButton3 = document.querySelector('#add-button3');
+const displaySelected = document.querySelector('#display-selected');
+
+let item1 = '';
+let item2 = '';
+let item3 = '';
+
+addButton1.addEventListener('click', () => {
+  if (item1 !== '') {
+    const selectedText = document.createElement('span');
+    selectedText.textContent = item1;
+    selectedText.style.fontSize = '16pt';
+    selectedText.style.color = 'yellow';
+    displaySelected.appendChild(selectedText);
+  }
+});
+
+addButton2.addEventListener('click', () => {
+  if (item2 !== '') {
+    const selectedText = document.createElement('span');
+    selectedText.textContent = item2;
+    selectedText.style.fontSize = '16pt';
+    selectedText.style.color = 'yellow';
+    displaySelected.appendChild(selectedText);
+  }
+});
+
+addButton3.addEventListener('click', () => {
+  if (item3 !== '') {
+    const selectedText = document.createElement('span');
+    selectedText.textContent = item3;
+    selectedText.style.fontSize = '16pt';
+    selectedText.style.color = 'yellow';
+    displaySelected.appendChild(selectedText);
+  }
+});
+
+list1.addEventListener('change', (event) => {
+  item1 = event.target.value;
+});
+
+list2.addEventListener('change', (event) => {
+  item2 = event.target.value;
+});
+
+list3.addEventListener('change', (event) => {
+  item3 = event.target.value;
+});
+
+#display-selected {
+  position: absolute;
+  top: 900px;
+  left: 100px;
+  font-family: 'my font1', sans-serif;
+}
+
+
+.player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.play-btn {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  font-family: 'my font1', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.volume-slider {
+  width: 100px;
+}
+
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#video-container video {
+  width: 430px;
+}
+
+video {
+  margin-right: 20px;
+}
+
+#shuffle-videos-btn {
+background-color: white;
+padding: 5px 5px;
+color:black;
+border: 1px solid black;
+border-radius: 5px;
+margin-bottom: 500px;
+margin-left:1370px;
+  display: flex;
+  position: absolute;
+font-family: 'my font1', sans-serif;
+font-size: 12pt;
+}
+
+#restart-btn {
+background-color: white;
+padding: 5px 5px;
+color:black;
+border: 1px solid black;
+border-radius: 5px;
+margin-top: 600px;
+margin-right:1410px;
+display: flex;
+position: absolute;
+font-family: 'my font1', sans-serif;
+font-size: 12pt;
+}
+
+
+a {
+color:black;
+  text-decoration: none;
+}
+
+#info-btn { 
+  position: absolute;
+  top: 50px;
+  left: 1720px;
+  font-family: american typewriter, sans-serif;
+  font-size: 15pt;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  border:1px solid black;
+  width:20px;
+  height: 20px;
+  padding:5px;
+  z-index: 100;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+  cursor: pointer;
+ }
+
+
+@font-face {
+  font-family: 'my font1';
+  src: url(ABCOracle-Light-Trial.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'my font2';
+  src: url(ABCCamera-RegularItalic-Trial.otf) format('truetype');
+}

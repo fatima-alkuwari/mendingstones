@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mending Stones</title>
+    <link rel="stylesheet" href="drag.css" />
+  </head>
+
+  <body>
+    <div id="title"> Mending Stones </div>
+
+<div class="color-swatches">
+  <div class="color-swatch" id="white"></div>
+  <div class="color-swatch" id="black"></div>
+  <div class="color-swatch" id="red"></div>
+  <div class="color-swatch" id="yellow"></div>
+  <div class="color-swatch" id="blue"></div>
+</div>
+
+<br>
+<div class="optiontxt">
+<div class="thetext"> Select text, press (+) to add: </div>
+</div>
+<div class="lists">
+<select id="list1">
+  <option value="" selected disabled hidden>Select an item</option>
+  <option value="The hard season will split you through">The hard season will split you through</option>
+  <option value="Do not worry">Do not worry</option>
+  <option value="You will bleed water">You will bleed water</option>
+  <option value="This is grief">This is grief</option>
+  <option value="Your face will fall out and down your skin">Your face will fall out and down your skin</option>
+  <option value="Keep coughing up smoke">Keep coughing up smoke</option>
+  <option value="From all the deaths you have died">From all the deaths you have died</option>
+  <option value="Keep the rage tender">Keep the rage tender</option>
+  <option value="Because the soft season will come">the soft season will come</option>
+</select>
+<button id="add-button1">+</button>
+
+<select id="list2">
+  <option value="" selected disabled hidden>Select an item</option>
+  <option value="The hard season will split you through">The hard season will split you through</option>
+  <option value="Do not worry">Do not worry</option>
+  <option value="You will bleed water">You will bleed water</option>
+  <option value="This is grief">This is grief</option>
+  <option value="Your face will fall out and down your skin">Your face will fall out and down your skin</option>
+  <option value="Keep coughing up smoke">Keep coughing up smoke</option>
+  <option value="From all the deaths you have died">From all the deaths you have died</option>
+  <option value="Keep the rage tender">Keep the rage tender</option>
+  <option value="Because the soft season will come">the soft season will come</option>
+</select>
+<button id="add-button2">+</button>
+
+<select id="list3">
+  <option value="" selected disabled hidden>Select an item</option>
+  <option value="The hard season will split you through">The hard season will split you through</option>
+  <option value="Do not worry">Do not worry</option>
+  <option value="You will bleed water">You will bleed water</option>
+  <option value="This is grief">This is grief</option>
+  <option value="Your face will fall out and down your skin">Your face will fall out and down your skin</option>
+  <option value="Keep coughing up smoke">Keep coughing up smoke</option>
+  <option value="From all the deaths you have died">From all the deaths you have died</option>
+  <option value="Keep the rage tender">Keep the rage tender</option>
+  <option value="Because the soft season will come">the soft season will come</option>
+</select>
+<button id="add-button3">+</button>
+<div id="display-selected"></div>
+</div>
+<br>
+<div class="optiontxt">
+<div class="thetext"> Select/layer audio, adjust audio level:</div>
+</div>
+ <audio id="audio1" src="sound1.wav"></audio>
+<audio id="audio2" src="sound2.wav"></audio>
+<audio id="audio3" src="sound3.wav"></audio>
+<audio id="audio4" src="sound4.mp3"></audio>
+<audio id="audio5" src="sound5.mp3"></audio>
+<audio id="audio6" src="sound6.wav"></audio>
+
+<div class="player-container">
+  <div class="player">
+    <button class="play-btn" data-audio="audio1">air pressure</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+  <div class="player">
+    <button class="play-btn" data-audio="audio2">drum</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+  <div class="player">
+    <button class="play-btn" data-audio="audio3">flute</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+    <div class="player">
+    <button class="play-btn" data-audio="audio4">rumble</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+      <div class="player">
+    <button class="play-btn" data-audio="audio5">power down</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+    <div class="player">
+    <button class="play-btn" data-audio="audio6">breathe/gasp</button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+
+<div id="video-container">
+  <video id="video1" autoplay loop>
+    <source src="" type="video/mp4">
+  </video>
+  <video id="video2" autoplay loop>
+    <source src="" type="video/mp4">
+  </video>
+  <video id="video3" autoplay loop>
+    <source src="" type="video/mp4">
+  </video>
+</div>
+<button id="shuffle-videos-btn">s<br>h<br>u<br>f<br>f<br>l<br>e<br></button>
+<button id="restart-btn"> <a href="index.html"> r<br>e<br>s<br>t<br>a<br>r<br>t<br></a></button> 
+
+<div id="info-btn"><a href="typing.html"> i </a></div>
+    <script src="shuffle.js"></script>
+
+    <script src="drag.js"></script>
+  </body>
+</html>
